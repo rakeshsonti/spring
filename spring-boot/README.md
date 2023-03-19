@@ -138,5 +138,32 @@ http://www.springframework.org/schema/context/spring-context.xsd">
 		</bean>
 </beans>
 ````
+-----------------------------------------------------------------------------------------------------------------
+
+> @Restcontroller
+
+* for creating restfull controller
+* combination of  @Controller , and @ResponseMapping - it convert response to JSON or XML
+* indicate that datat return by each method will be straight written into the response body instead of rendring a template
+
+
+> @Controller VS @RestController
+
+* @Controller map the model of the object to view or template and make human readable format
+* @Restcontroller simply return the object and the object data is directky written into the HTTP response as JSON and XML
+
+> @RequestMapping vs @GetMapping
+
+* @RequestMapping - can defined multiple type (POST,PUT,Delete,GET,Patch) of request and handle through it
+* @GetMapping - can handle only get request
+
+> Use of profile in Spring
+
+when we develop an application , we deals with multiple enviroment such as QC, Staging, PRE PROD and PROD etc. so profile help us to seperate the configuration for each enviroment.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+
 
 
