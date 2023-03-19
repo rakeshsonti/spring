@@ -87,19 +87,19 @@ xml base configuration
 
 Driver Code
 
-``
-	ConfigurableApplicationContext context=	SpringApplication.run(Demo1Application.class, args);
+````
+ConfigurableApplicationContext context=	SpringApplication.run(Demo1Application.class, args);
 //		String engineName=context.getBean(Car.class).getEngineDetails();
 //		log.info(engineName);
 		
 		EngineVehicle engObj= context.getBean(EngineVehicle.class);
 		log.info(engObj.getName());
-
-``
+````
 
 pojo Class
 
-``
+
+````
 @Component
 public class EngineVehicle {
 
@@ -108,12 +108,11 @@ public class EngineVehicle {
 	private Integer price;
   }
 
-``
+````
 
 engine.xml
 
-``
-
+````
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 xmlns:context="http://www.springframework.org/schema/context"
@@ -138,7 +137,6 @@ http://www.springframework.org/schema/context/spring-context.xsd">
 		<property name="price" value="{engine.price}"></property>
 		</bean>
 </beans>
-
-``
+````
 
 
