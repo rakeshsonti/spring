@@ -161,6 +161,8 @@ http://www.springframework.org/schema/context/spring-context.xsd">
 
 when we develop an application , we deals with multiple enviroment such as QC, Staging, PRE PROD and PROD etc. so profile help us to seperate the configuration for each enviroment.
 
+spring.profiles.active=prod
+
 -----------------------------------------------------------------------------------------------------------------------------------
 
 
