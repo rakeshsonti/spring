@@ -1,2 +1,2 @@
 ### XML Based config Details
-#### Setter injection
+#### Setter injection using Application context
