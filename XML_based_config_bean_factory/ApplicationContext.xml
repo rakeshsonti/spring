@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- place configuration details here -->
+	<bean id="car" class="com.department.learn.io.anotation_based.Car">
+		<!-- constructor  injection -->
+		<constructor-arg ref="engine"></constructor-arg>
+	</bean>
+	<bean id="engine"
+		class="com.department.learn.io.anotation_based.Engine"></bean>
+</beans>
