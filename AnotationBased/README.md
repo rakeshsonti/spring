@@ -13,6 +13,7 @@ bean defination, scope defination, dependency injection mechanisiom, every thing
 * two type of injection
 1) setter injection 2) constructor based injection
 
+![Screenshot_20230319-143618](https://user-images.githubusercontent.com/52101117/226165169-f616d5d2-ccc6-4f4b-a37b-db4f0bf856ea.png)
 
 
 
